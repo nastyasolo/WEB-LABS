@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="papka/styles/style.css">
+  
+  </head>
+
+
+  <body>
+    <div class="backgroundColor-top">
+    <div class="form-container">
+        <h1>Регистрация на сайте для путешественников</h1>
+        <p ><span>*Обязательный вопрос</span></p>
+        <form action="#" method="post">
+            <p><label class="form-label" for="name">Введите ваше имя<span>*</span></label></p>
+            <p><input class="form-input" type="text" id="name" name="name" placeholder="Enter name" required></p>
+
+            <p><label class="form-label" for="login">Введите email<span>*</span></label></p>
+            <p><input class="form-input" type="email" id="login" name="login" placeholder="Enter email" required></p>
+            
+            <p><label class="form-label" for="password">Введите пароль<span>*</span></label></p>
+            <p><input class="form-input" type="password" id="password" name="password" placeholder="Enter password" required minlength="4" maxlength="20"></p>
+
+            <p><label class="form-label" for="date">Укажите вашу дату рождения<span>*</span></label></p>
+            <p><input class="form-input" type="date" id="date" name="date" required></p>
+
+            <p>
+                <label class="form-label" for="land0">На каком материке вы родились<span>*</span></label>
+                <ul class="specialList"> 
+                    <li><input type="radio" name="land0">Евразия</li> 
+                    <li><input type="radio" name="land0">Африка</li> 
+                    <li><input type="radio" name="land0">Южная Америка</li> 
+                    <li><input type="radio" name="land0">Северная Америка</li> 
+                    <li><input type="radio" name="land0">Австралия</li> 
+                    <li><input type="radio" name="land0">Антарктида</li> 
+                </ul> 
+            </p>
+            <p>
+                <label class="form-label" for="amount">В компании скольки человек вы обычно путешествуете<span>*</span></label>
+                <select class="form-input" id="amount" name="amount" required>
+                    <option value="" disabled selected>Выбрать</option>
+                    <option value="alone">Я путешествую один</option> 
+                    <option value="double">Вдвоём с кем-то</option> 
+                    <option value="small">Небольшой группой(3-5 чел.)</option> 
+                    <option value="big">Большой группой(>5 чел.)</option> 
+                </select>
+             </p>
+
+            <p><label class="form-label">На каких материках вы бывали</label>
+            <ul class="specialList"> 
+                <li><input type="checkbox" name="land1">Евразия</li> 
+                <li><input type="checkbox" name="land2">Африка</li> 
+                <li><input type="checkbox" name="land3">Южная Америка</li> 
+                <li><input type="checkbox" name="land4">Северная Америка</li> 
+                <li><input type="checkbox" name="land5">Австралия</li> 
+                <li><input type="checkbox" name="land6">Антарктида</li> 
+            </ul> 
+             </p>
+            <p><label class="form-label" for="image">Прикрепите ваше фото</label></p>
+            <p><input class="form-input" type="file" id="image" name="image" accept="image/*"></p>
+
+            <p><label class="form-label" for="comm">Расскажите что-нибудь о себе<span>*</span></label></p>
+            <p><input type="text" class="form-input" id="comm" name="comm" style="width: 90%;" placeholder="Ваш ответ" required></textarea></p>
+
+            <button class="form-submit" type="submit">Отправить</button>
+            <input type="reset"> 
+        </form>
+    </div>
+</div>
+
+</body>
